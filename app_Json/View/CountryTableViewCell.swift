@@ -9,7 +9,5 @@
 import UIKit
 
 class CountryTableViewCell: UITableViewCell {
-
     @IBOutlet weak var label: UILabel!
-    
 }

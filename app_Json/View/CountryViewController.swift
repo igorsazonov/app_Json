@@ -17,7 +17,6 @@ class CountryViewController: UITableViewController {
         countryViewModel.jsonLoad()
         navigationItem.title = "Country"
         navigationController?.navigationBar.prefersLargeTitles = true
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,12 +25,10 @@ class CountryViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let currentCountry = countryViewModel.country[indexPath.row]
-        if let customView = Bundle.main.loadNibNamed("CountryTableViewCell", owner: self, options: nil)?.first as? CountryTableViewCell {
-            customView.backgroundColor = .yellow
-            customView.label.text = currentCountry.countryName
-            return customView
-        }
-        return UITableViewCell()
+        let customView = tableView.registerNib(CountryTableViewCell.self)
+        customView.backgroundColor = .yellow
+        customView.label.text = currentCountry.countryName
+        return customView
     }
 }
 

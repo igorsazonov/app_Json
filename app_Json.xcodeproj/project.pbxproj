@@ -16,6 +16,7 @@
 		F71BC7E823A0FE8200D5F89C /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = F71BC7E723A0FE8200D5F89C /* messages.json */; };
 		F71BC7ED23A0FEF600D5F89C /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BC7EB23A0FEF600D5F89C /* CountryTableViewCell.swift */; };
 		F71BC7EE23A0FEF600D5F89C /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71BC7EC23A0FEF600D5F89C /* CountryTableViewCell.xib */; };
+		F71BC7F223A133E100D5F89C /* extensionNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BC7F123A133E100D5F89C /* extensionNib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F71BC7E723A0FE8200D5F89C /* messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messages.json; sourceTree = SOURCE_ROOT; };
 		F71BC7EB23A0FEF600D5F89C /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		F71BC7EC23A0FEF600D5F89C /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
+		F71BC7F123A133E100D5F89C /* extensionNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionNib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		F71BC7CD23A0F88A00D5F89C /* app_Json */ = {
 			isa = PBXGroup;
 			children = (
+				F71BC7F323A146A400D5F89C /* extension */,
 				F71BC7E023A0F8F100D5F89C /* Model */,
 				F71BC7E123A0F8F700D5F89C /* ViewModel */,
 				F71BC7E223A0F92400D5F89C /* View */,
@@ -91,9 +94,9 @@
 		F71BC7E223A0F92400D5F89C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F71BC7CE23A0F88A00D5F89C /* AppDelegate.swift */,
 				F71BC7EB23A0FEF600D5F89C /* CountryTableViewCell.swift */,
 				F71BC7EC23A0FEF600D5F89C /* CountryTableViewCell.xib */,
-				F71BC7CE23A0F88A00D5F89C /* AppDelegate.swift */,
 				F71BC7D023A0F88A00D5F89C /* CountryViewController.swift */,
 			);
 			path = View;
@@ -106,6 +109,14 @@
 				F71BC7D723A0F88B00D5F89C /* LaunchScreen.storyboard */,
 			);
 			path = RestFiles;
+			sourceTree = "<group>";
+		};
+		F71BC7F323A146A400D5F89C /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F71BC7F123A133E100D5F89C /* extensionNib.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				F71BC7E423A0F96900D5F89C /* Country.swift in Sources */,
 				F71BC7CF23A0F88A00D5F89C /* AppDelegate.swift in Sources */,
 				F71BC7ED23A0FEF600D5F89C /* CountryTableViewCell.swift in Sources */,
+				F71BC7F223A133E100D5F89C /* extensionNib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
