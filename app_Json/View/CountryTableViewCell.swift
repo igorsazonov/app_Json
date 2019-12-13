@@ -9,5 +9,12 @@
 import UIKit
 
 class CountryTableViewCell: UITableViewCell {
+    
+    var country: Country? {
+        didSet{
+            self.label.text = self.country?.countryName
+        }
+    }
+    
     @IBOutlet weak var label: UILabel!
 }
