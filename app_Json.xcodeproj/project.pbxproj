@@ -16,8 +16,9 @@
 		F71BC7E823A0FE8200D5F89C /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = F71BC7E723A0FE8200D5F89C /* messages.json */; };
 		F71BC7ED23A0FEF600D5F89C /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BC7EB23A0FEF600D5F89C /* CountryTableViewCell.swift */; };
 		F71BC7EE23A0FEF600D5F89C /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71BC7EC23A0FEF600D5F89C /* CountryTableViewCell.xib */; };
-		F71BC7F223A133E100D5F89C /* extensionNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BC7F123A133E100D5F89C /* extensionNib.swift */; };
+		F71BC7F223A133E100D5F89C /* +Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71BC7F123A133E100D5F89C /* +Nib.swift */; };
 		F751035323A3618500440C8D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F751035523A3618500440C8D /* Localizable.strings */; };
+		F792EAD023A378D600D5DA79 /* +String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792EACF23A378D600D5DA79 /* +String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,11 +33,12 @@
 		F71BC7E723A0FE8200D5F89C /* messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messages.json; sourceTree = SOURCE_ROOT; };
 		F71BC7EB23A0FEF600D5F89C /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		F71BC7EC23A0FEF600D5F89C /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
-		F71BC7F123A133E100D5F89C /* extensionNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionNib.swift; sourceTree = "<group>"; };
+		F71BC7F123A133E100D5F89C /* +Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+Nib.swift"; sourceTree = "<group>"; };
 		F751035423A3618500440C8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F751035623A3619D00440C8D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F751035723A361A900440C8D /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F751035823A361B700440C8D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F792EACF23A378D600D5DA79 /* +String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,8 @@
 		F71BC7F323A146A400D5F89C /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				F71BC7F123A133E100D5F89C /* extensionNib.swift */,
+				F71BC7F123A133E100D5F89C /* +Nib.swift */,
+				F792EACF23A378D600D5DA79 /* +String.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -210,11 +213,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F71BC7D123A0F88A00D5F89C /* CountryViewController.swift in Sources */,
+				F792EAD023A378D600D5DA79 /* +String.swift in Sources */,
 				F71BC7E623A0F9AB00D5F89C /* CountryViewModel.swift in Sources */,
 				F71BC7E423A0F96900D5F89C /* Country.swift in Sources */,
 				F71BC7CF23A0F88A00D5F89C /* AppDelegate.swift in Sources */,
 				F71BC7ED23A0FEF600D5F89C /* CountryTableViewCell.swift in Sources */,
-				F71BC7F223A133E100D5F89C /* extensionNib.swift in Sources */,
+				F71BC7F223A133E100D5F89C /* +Nib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
