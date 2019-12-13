@@ -15,7 +15,7 @@ class CountryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         countryViewModel.jsonLoad()
-        navigationItem.title = "Country"
+        navigationItem.title = NSLocalizedString("title", comment: "")
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
