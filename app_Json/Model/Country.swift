@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Realm
+import RealmSwift
 
 class Country {
     let countryName: String
@@ -15,3 +17,13 @@ class Country {
         self.countryName = dictionary["Name"] as? String ?? "NA"
     }
 }
+
+
+class CountryRealm: Object {
+     @objc dynamic var countryName: String = " "
+    
+}
+
+
+
+

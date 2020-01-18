@@ -7,16 +7,26 @@
 //
 
 import Foundation
+import Realm
+import RealmSwift
 
 class CountryViewModel {
     
     //Data Model of the ViewModel
-    var country = [Country]()
+    var massCountry = [Country]()
     
     func jsonLoad() {
         let jsonArray = parseJson()
         print(jsonArray)
-        country = jsonArray.compactMap{return Country($0)}
+        massCountry = jsonArray.compactMap{return Country($0)}
+        /*let realm = try! Realm()
+        for country in massCountry {
+            let countryRealm = CountryRealm()
+            countryRealm.countryName = country.countryName
+            try! realm.write({
+                realm.add(countryRealm)
+            })
+        }*/
     }
     
     func parseJson() -> [[String: Any]] {
@@ -43,4 +53,3 @@ class CountryViewModel {
         return arrayJson as! [[String : Any]]
     }
 }
-
